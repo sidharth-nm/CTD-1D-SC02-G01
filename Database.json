@@ -1,0 +1,119 @@
+{
+    "users": [
+        {
+            "username": "user1234",
+            "password": "password1234"
+        },
+        {
+            "username": "user5678",
+            "password": "password5678"
+        }
+    ],
+    "books": [
+        {
+            "title": "The Girl with the Dragon Tattoo",
+            "author": "Stieg Larsson",
+            "image": "",
+            "price": 13.99,
+            "genre": "Crime"
+        },
+        {
+            "title": "Gone Girl",
+            "author": "Gillian Flynn",
+            "image": "",
+            "price": 12.5,
+            "genre": "Crime"
+        },
+        {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "image": "",
+            "price": 8.75,
+            "genre": "Romance"
+        },
+        {
+            "title": "The Notebook",
+            "author": "Nicholas Sparks",
+            "image": "",
+            "price": 10.25,
+            "genre": "Romance"
+        },
+        {
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "image": "",
+            "price": 14.99,
+            "genre": "Scientific Fiction"
+        },
+        {
+            "title": "1984",
+            "author": "George Orwell",
+            "image": "",
+            "price": 10.5,
+            "genre": "Scientific Fiction"
+        },
+        {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "image": "",
+            "price": 15.25,
+            "genre": "Fantasy"
+        },
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "image": "",
+            "price": 16.99,
+            "genre": "Fantasy"
+        },
+        {
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "image": "",
+            "price": 11.75,
+            "genre": "Crime"
+        },
+        {
+            "title": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "image": "",
+            "price": 12.99,
+            "genre": "Scientific Fiction"
+        },
+        {
+            "title": "A Game of Thrones",
+            "author": "George R.R. Martin",
+            "image": "",
+            "price": 18.5,
+            "genre": "Fantasy"
+        },
+        {
+            "title": "The Time Traveler's Wife",
+            "author": "Audrey Niffenegger",
+            "image": "",
+            "price": 9.99,
+            "genre": "Romance"
+        },
+        {
+            "title": "Neuromancer",
+            "author": "William Gibson",
+            "image": "",
+            "price": 13.25,
+            "genre": "Scientific Fiction"
+        },
+        {
+            "title": "The Name of the Wind",
+            "author": "Patrick Rothfuss",
+            "image": "",
+            "price": 14.75,
+            "genre": "Fantasy"
+        },
+        {
+            "title": "The Silent Patient",
+            "author": "Alex Michaelides",
+            "image": "",
+            "price": 11.25,
+            "genre": "Crime"
+        }
+    ]
+}
