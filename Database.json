@@ -11,109 +11,125 @@
     ],
     "books": [
         {
+            "id": 0,
             "title": "The Girl with the Dragon Tattoo",
             "author": "Stieg Larsson",
-            "image": "",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GWlNb2DWOIOTdRmCl0Tw8dGLd97sU0mFxPaJY3033SRhkmx_tk9cKz17nIawRzZGC7Gq8eJ1vFkkblt136BjThQwrYCnEFfjOvzBrvzJ",
             "price": 13.99,
             "genre": "Crime"
         },
         {
+            "id": 1,
             "title": "Gone Girl",
             "author": "Gillian Flynn",
-            "image": "",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29uGi-pcT4xc5Q33JnRIDpORZONO2xodraRi2F52tQe4wMHtK5LJak-eEH8Er00UZlR6il8rwGtUy2kejcPq3YqUZ12gFDXq92fK4LvRn",
             "price": 12.5,
             "genre": "Crime"
         },
         {
+            "id": 2,
             "title": "Pride and Prejudice",
             "author": "Jane Austen",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81NLDvyAHrL.jpg",
             "price": 8.75,
             "genre": "Romance"
         },
         {
+            "id": 3,
             "title": "The Notebook",
             "author": "Nicholas Sparks",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/91dXKp4WQJL._SY466_.jpg",
             "price": 10.25,
             "genre": "Romance"
         },
         {
+            "id": 4,
             "title": "Dune",
             "author": "Frank Herbert",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81T5ecpb8aL._SY466_.jpg",
             "price": 14.99,
             "genre": "Scientific Fiction"
         },
         {
+            "id": 5,
             "title": "1984",
             "author": "George Orwell",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/71wANojhEKL._SY522_.jpg",
             "price": 10.5,
             "genre": "Scientific Fiction"
         },
         {
+            "id": 6,
             "title": "The Hobbit",
             "author": "J.R.R. Tolkien",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81uEDUfKBZL._SY466_.jpg",
             "price": 15.25,
             "genre": "Fantasy"
         },
         {
+            "id": 7,
             "title": "Harry Potter and the Sorcerer's Stone",
             "author": "J.K. Rowling",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/5152XTq24+L._SY445_SX342_ML2_.jpg",
             "price": 16.99,
             "genre": "Fantasy"
         },
         {
+            "id": 8,
             "title": "The Da Vinci Code",
             "author": "Dan Brown",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81IhhL9SnNL._AC_UL480_FMwebp_QL65_.jpg",
             "price": 11.75,
             "genre": "Crime"
         },
         {
+            "id": 9,
             "title": "The Hunger Games",
             "author": "Suzanne Collins",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/61I24wOsn8L._AC_UL480_FMwebp_QL65_.jpg",
             "price": 12.99,
             "genre": "Scientific Fiction"
         },
         {
+            "id": 10,
             "title": "A Game of Thrones",
             "author": "George R.R. Martin",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81FWVQqXf-L._AC_UL480_FMwebp_QL65_.jpg",
             "price": 18.5,
             "genre": "Fantasy"
         },
         {
+            "id": 11,
             "title": "The Time Traveler's Wife",
             "author": "Audrey Niffenegger",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/71P57HTyLCL._AC_UL480_FMwebp_QL65_.jpg",
             "price": 9.99,
             "genre": "Romance"
         },
         {
+            "id": 12,
             "title": "Neuromancer",
             "author": "William Gibson",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81o7WR91hoL._AC_UL480_FMwebp_QL65_.jpg",
             "price": 13.25,
             "genre": "Scientific Fiction"
         },
         {
+            "id": 13,
             "title": "The Name of the Wind",
             "author": "Patrick Rothfuss",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/611iKJa7a-L._AC_UL480_FMwebp_QL65_.jpg",
             "price": 14.75,
             "genre": "Fantasy"
         },
         {
+            "id": 14,
             "title": "The Silent Patient",
             "author": "Alex Michaelides",
-            "image": "",
+            "image": "https://m.media-amazon.com/images/I/81ROr4tKYKL._AC_UL480_FMwebp_QL65_.jpg",
             "price": 11.25,
             "genre": "Crime"
         }
     ]
 }
+
