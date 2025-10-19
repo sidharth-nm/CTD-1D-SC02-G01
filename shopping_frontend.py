@@ -1,13 +1,14 @@
-
 import streamlit as st
 import pagination as pg
+import create_account_frontend as front
 import payment_frontend as payment
+import login_frontend as login
 import shopping_backend as shopback
 
 class Page:
-    #initialise its container
+    #create Page object
     def __init__(self):
-        self.container = st.container()
+        pass
 
     #TODO: update the total and shopping list database and total in this script
     def update_payment(self):
@@ -44,10 +45,11 @@ class Page:
         if st.session_state.curr_search_input:
             results_list = shopback.get_search_results(st.session_state.curr_search_input)
 
+            #if nothing, give none
             if not results_list:
-                st.session_state.book_cards_to_display = "<div>No results found</div>"
+                st.session_state.book_cards_to_display = None
+            #else store results from search
             else:
-                all_book_card_divs = ""
                 st.session_state.book_cards_to_display = results_list
         else:
             st.session_state.book_cards_to_display = None
@@ -61,7 +63,7 @@ class Page:
     def render(self):
         # Initialize session state for the book display elements if not already present
         if "book_cards_to_display" not in st.session_state:
-            st.session_state.book_cards_to_display = ""
+            st.session_state.book_cards_to_display = []
 
         # Initialize session state for the input if not already present
         if "curr_search_input" not in st.session_state:
@@ -80,8 +82,9 @@ class Page:
         #initialise book cards elements
         self.handle_search()
 
-        #display the starting elements and add necessary listeners
-        with self.container:
+        #display the shopping container
+        shopping_container = st.container()
+        with shopping_container:
             with st.container(width = "stretch"):
                 col1, col2 = st.columns([0.1, 0.9])
                 with col1:
@@ -150,8 +153,8 @@ class Page:
                             checkout_btn_clicked = st.button("Checkout")
                             if checkout_btn_clicked:
                                 if len(st.session_state.books_in_cart['book_ids']) > 0:
-                                    pg.change_page(payment.Page())
+                                    pg.change_page(login.Page)
                                 else:
                                     st.error("Please add books to cart")
 
-
+        return shopping_container

@@ -7,6 +7,10 @@
         {
             "username": "user5678",
             "password": "password5678"
+        },
+        {
+            "username": "newaccount",
+            "password": "newpassword!"
         }
     ],
     "books": [
@@ -132,4 +136,3 @@
         }
     ]
 }
-

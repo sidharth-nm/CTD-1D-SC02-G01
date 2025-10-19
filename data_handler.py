@@ -26,15 +26,27 @@ def get_book_by_id(id):
     if id == book['id'] :
       return book
 
-#GET filtered list of users by a key
-def get_filtered_users_list(key, value):
+# TODO: Delete this, is deprecated
+# GET filtered list of users by a key
+def get_filtered_users_list(username, password):
   filtered_users = []
 
   #return list of users who match the input
   for user in users:
-    if user[key] == value:
+    if user[username] == password:
       filtered_users.append(user)
   return filtered_users
+
+#GET username, password pair by key (username); if doesn't exist, returns empty dict
+def get_user_details(username):
+  # Returns user with matching username-password pair
+  for user in users:
+    if user['username'] == username:
+      return user
+  
+  # Failsafe; if no such user exists, empty dict returned
+  return {}
+    
 
 #CREATE user data
 def user(username, password):
