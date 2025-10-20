@@ -1,8 +1,6 @@
 import streamlit as st
 import pagination as pg
-import create_account_frontend as front
 import payment_frontend as payment
-import login_frontend as login
 import shopping_backend as shopback
 
 class Page:
@@ -153,7 +151,7 @@ class Page:
                             checkout_btn_clicked = st.button("Checkout")
                             if checkout_btn_clicked:
                                 if len(st.session_state.books_in_cart['book_ids']) > 0:
-                                    pg.change_page(login.Page)
+                                    pg.change_page(payment.Page)
                                 else:
                                     st.error("Please add books to cart")
 

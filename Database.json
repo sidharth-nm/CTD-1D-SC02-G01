@@ -11,6 +11,18 @@
         {
             "username": "newaccount",
             "password": "newpassword!"
+        },
+        {
+            "username": "asdsasds",
+            "password": "asddasdasdsdasd@!"
+        },
+        {
+            "username": "MyCoolAccount",
+            "password": "MyCoolPassword123!"
+        },
+        {
+            "username": "asdasd",
+            "password": "asdasds@!#!#@"
         }
     ],
     "books": [

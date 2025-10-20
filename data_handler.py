@@ -62,6 +62,9 @@ def add_user(new_user):
   new_users_list.append(new_user)
   update_database(database, new_users_list)
 
+  #refresh data to ensure credentials cache isn't stale
+  users.append(new_user)
+
 #UPDATE the databases
 def update_database(database, new_users = None):
   #update the dictionary variables
@@ -75,6 +78,9 @@ def update_database(database, new_users = None):
   #update the db in the json file
   with open(DB_FILE_PATH, "w") as f:
     f.write(database_json_string)
+
+  
+
 
 #Initialise data
 database = get_data()

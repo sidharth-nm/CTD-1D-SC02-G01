@@ -20,7 +20,6 @@ st.set_page_config(page_title="The Reading Nook", page_icon="📖")
 
 @st.fragment
 def render_current_page():
-    print(st.session_state.curr_page)
     current_page = st.session_state.curr_page()
     current_page.render()
 

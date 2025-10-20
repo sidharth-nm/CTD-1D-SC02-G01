@@ -6,6 +6,5 @@ import streamlit as st
 
 #page change
 def change_page(new_page):
-  print("Change page called")
   st.session_state.curr_page = new_page
   st.rerun(scope="fragment")

@@ -17,9 +17,8 @@ class Page:
           #display the starting elements and add necessary listeners
           col1, middleCol, col2 = st.columns(3)
           with middleCol:
-            #st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
-            pass
-
+            st.image("test.jpeg", width=200)
+          
           st.markdown("<h1 style='text-align: center;'>Make New Account</h1>", unsafe_allow_html=True)
           username = st.text_input("Username")
           password = st.text_input("Password", type="password")
@@ -43,7 +42,7 @@ class Page:
                 else:
                     # Input verification + account creation
                     if caccback.verify_credentials(username):
-                        dh.add_user( {'username': username, 'password': password} )
+                        dh.add_user( {'username': username.strip(), 'password': password.strip()} )
                         st.success("Account successfully made! Redirecting to login page...")
                         # Temporarily pauses so reader can see success message
                         sleep(0.8)
