@@ -1,3 +1,4 @@
-# CTD-1D-SC02-G01
-wuh
-we fill this out later
+# The Reading Nook
+SC02 Group 1's submission for the CTD 1D Project.
+
+![Reading Nook logo](ctd_1d_logo.jpg)
