@@ -23,6 +23,10 @@
         {
             "username": "asdasd",
             "password": "asdasds@!#!#@"
+        },
+        {
+            "username": "abc123",
+            "password": "abcdefgh!"
         }
     ],
     "books": [

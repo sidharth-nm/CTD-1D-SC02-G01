@@ -17,7 +17,7 @@ class Page:
           #display the starting elements and add necessary listeners
           col1, middleCol, col2 = st.columns(3)
           with middleCol:
-            st.image("test.jpeg", width=200)
+            st.image("ctd_1d_logo.jpg", width=350)
 
           st.markdown("<h1 style='text-align: center;'>Login To Your Account</h1>", unsafe_allow_html=True)
           username = st.text_input("Username")
@@ -29,7 +29,6 @@ class Page:
 
             # Event listener for Create Account button
             if create_acc_button:
-              print("Create Account clicked")
               pg.change_page(create_acc.Page)
           
           with rightButtonCol:

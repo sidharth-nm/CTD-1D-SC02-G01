@@ -17,7 +17,7 @@ class Page:
           #display the starting elements and add necessary listeners
           col1, middleCol, col2 = st.columns(3)
           with middleCol:
-            st.image("test.jpeg", width=200)
+            st.image("ctd_1d_logo.jpg", width=350)
           
           st.markdown("<h1 style='text-align: center;'>Make New Account</h1>", unsafe_allow_html=True)
           username = st.text_input("Username")
@@ -30,9 +30,6 @@ class Page:
 
             # Event listener for Create Account button
             if create_acc_button_clicked:
-                print("Create Account clicked")
-                print(password)
-                print(password.isalnum())
 
                 # Input validation
                 if len(username.strip()) <= 5 or username == "":
@@ -56,7 +53,6 @@ class Page:
 
             # Event listener for Login button
             if login_button_clicked:
-              print("Login clicked")
               pg.change_page(login.Page)
 
 

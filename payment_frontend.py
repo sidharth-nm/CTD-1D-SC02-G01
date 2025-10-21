@@ -16,8 +16,9 @@ class Page:
       st.error("Your cart is empty. Please add items.")
 
     total_to_pay = pay_back.total_with_gst()
-    print(type(total_to_pay))
-    st.markdown("**Grand total with 9%% GST: %f**" % round(total_to_pay, 2))
+    st.markdown("Grand total with 9%% GST: %f" % round(total_to_pay[0], 2))
+    if total_to_pay[1]:
+      st.success("Your bill was over $35, so a 10% discount was applied!")
 
     col1, col2 = st.columns(2)
 
