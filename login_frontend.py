@@ -14,16 +14,19 @@ class Page:
     def render(self):
         page_container = st.container()
         with page_container:
-          #display the starting elements and add necessary listeners
+          # Display the starting elements and add necessary listeners
           col1, middleCol, col2 = st.columns(3)
           with middleCol:
+            # Book store logo
             st.image("ctd_1d_logo.jpg", width=350)
 
+          # Title
           st.markdown("<h1 style='text-align: center;'>Login To Your Account</h1>", unsafe_allow_html=True)
           username = st.text_input("Username")
           password = st.text_input("Password", type="password")
 
           leftButtonCol, rightButtonCol = st.columns(2)
+          # Create Account button
           with leftButtonCol:
             create_acc_button = st.button("Create Account")
 
@@ -31,6 +34,7 @@ class Page:
             if create_acc_button:
               pg.change_page(create_acc.Page)
           
+          # Login button
           with rightButtonCol:
             login_button = st.button("Login")
 
@@ -39,6 +43,7 @@ class Page:
               print("Login clicked")
               print(f"Credentials: {username}, {password}")
 
+              # Verifies if credentials are valid
               if logback.verify_credentials(username, password):
                 st.success("Successfully logged in! Redirecting...")
                 st.session_state.logged_in = True

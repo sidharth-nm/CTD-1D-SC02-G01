@@ -1,6 +1,8 @@
+# Imports
 import streamlit as st
 import shopping_backend as shop_back
 
+# Retrieves list of books purchased 
 def get_books():
   book_list = []
   if "books_in_cart" in st.session_state:

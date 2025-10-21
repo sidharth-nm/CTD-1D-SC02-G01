@@ -1,5 +1,5 @@
+# Imports
 import data_handler as dh
-import streamlit as st
 
 #get a book by id
 def get_book_by_id(id):

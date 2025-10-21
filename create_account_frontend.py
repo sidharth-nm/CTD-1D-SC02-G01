@@ -1,7 +1,7 @@
+# Imports
 import streamlit as st
 import pagination as pg
 import data_handler as dh
-import shopping_frontend as shop
 import login_frontend as login
 from time import sleep
 import create_account_backend as caccback
@@ -47,11 +47,11 @@ class Page:
                     else:
                         st.error("Account could not be made (username is already in use)")
           
-
+          # Displays Login to Existing Account button
           with rightButtonCol:
             login_button_clicked = st.button("Login to Existing Account")
 
-            # Event listener for Login button
+            # Event listener for Login to Existing Account button
             if login_button_clicked:
               pg.change_page(login.Page)
 

@@ -1,10 +1,9 @@
-import app
-import create_account_frontend as front
+'''Auxilliary file; used to handle page changes in application'''
 
-#prevents potential circular import between page files and app.py
+# Prevents potential circular import between page files and app.py
 import streamlit as st
 
-#page change
+# Changes page currently seen by the user
 def change_page(new_page):
   st.session_state.curr_page = new_page
   st.rerun(scope="fragment")

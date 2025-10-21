@@ -1,3 +1,4 @@
+# Imports
 import data_handler as dh
 
 # Verifies credentials (input validation is handled in create_account_frontend). Auxilliary function

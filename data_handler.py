@@ -1,4 +1,7 @@
-import os,io,json,copy
+# Imports
+import os
+import json # Loads data from database (json) file
+import copy
 
 DB_FILE = "Database.json"
 DB_FILE_PATH = os.path.join(os.getcwd(), DB_FILE)
